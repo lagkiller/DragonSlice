@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Fonts\ControlFont.spritefont</Source>
+      <Name>Fonts\ControlFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Fonts\ControlFont.xnb</Output>
+      <Time>2012-11-03T15:31:23.6172495-04:00</Time>
+    </Item>
+    <Item>
+      <Source>GUI\leftarrowUp.png</Source>
+      <Name>GUI\leftarrowUp</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\GUI\leftarrowUp.xnb</Output>
+      <Time>2012-11-03T14:49:07.8462117-04:00</Time>
+    </Item>
+    <Item>
+      <Source>GUI\rightarrowUp.png</Source>
+      <Name>GUI\rightarrowUp</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\GUI\rightarrowUp.xnb</Output>
+      <Time>2012-11-03T14:52:24.0714352-04:00</Time>
+    </Item>
+    <Item>
+      <Source>GUI\StopBar.png</Source>
+      <Name>GUI\StopBar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\GUI\StopBar.xnb</Output>
+      <Time>2012-11-03T14:53:22.0337504-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Backgrounds\titlescreen.png</Source>
+      <Name>Backgrounds\titlescreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Backgrounds\titlescreen.xnb</Output>
+      <Time>2012-11-03T15:37:36.7145895-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Tilesets\tileset1.png</Source>
+      <Name>Tilesets\tileset1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Tilesets\tileset1.xnb</Output>
+      <Time>2012-11-03T15:49:02.6088204-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Tilesets\tileset2.png</Source>
+      <Name>Tilesets\tileset2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Tilesets\tileset2.xnb</Output>
+      <Time>2012-11-03T19:07:30.2718998-04:00</Time>
+    </Item>
+    <Item>
+      <Source>PlayerSprites\femalepriest.png</Source>
+      <Name>PlayerSprites\femalepriest</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\PlayerSprites\femalepriest.xnb</Output>
+      <Time>2012-11-03T21:01:55.1405478-04:00</Time>
+    </Item>
+    <Item>
+      <Source>PlayerSprites\femalerogue.png</Source>
+      <Name>PlayerSprites\femalerogue</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\PlayerSprites\femalerogue.xnb</Output>
+      <Time>2012-11-03T21:01:55.144548-04:00</Time>
+    </Item>
+    <Item>
+      <Source>PlayerSprites\malepriest.png</Source>
+      <Name>PlayerSprites\malepriest</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\PlayerSprites\malepriest.xnb</Output>
+      <Time>2012-11-03T21:01:55.1495483-04:00</Time>
+    </Item>
+    <Item>
+      <Source>PlayerSprites\malerogue.png</Source>
+      <Name>PlayerSprites\malerogue</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\PlayerSprites\malerogue.xnb</Output>
+      <Time>2012-11-03T21:01:55.1505484-04:00</Time>
+    </Item>
+    <Item>
+      <Source>PlayerSprites\FemaleWarrior.png</Source>
+      <Name>PlayerSprites\FemaleWarrior</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\PlayerSprites\FemaleWarrior.xnb</Output>
+      <Time>2012-11-03T21:01:55.1365475-04:00</Time>
+    </Item>
+    <Item>
+      <Source>PlayerSprites\FemaleMagician.png</Source>
+      <Name>PlayerSprites\FemaleMagician</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\PlayerSprites\FemaleMagician.xnb</Output>
+      <Time>2012-11-03T21:01:55.1465481-04:00</Time>
+    </Item>
+    <Item>
+      <Source>PlayerSprites\MaleWarrior.png</Source>
+      <Name>PlayerSprites\MaleWarrior</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\PlayerSprites\MaleWarrior.xnb</Output>
+      <Time>2012-11-03T21:01:55.1475482-04:00</Time>
+    </Item>
+    <Item>
+      <Source>PlayerSprites\MaleMagician.png</Source>
+      <Name>PlayerSprites\MaleMagician</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\PlayerSprites\MaleMagician.xnb</Output>
+      <Time>2012-11-03T21:01:55.1515484-04:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSliceContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSliceContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2012-09-20T22:47:23.0052214-04:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

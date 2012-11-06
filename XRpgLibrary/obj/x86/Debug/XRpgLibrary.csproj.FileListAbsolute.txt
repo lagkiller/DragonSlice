@@ -1,0 +1,6 @@
+C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\XRpgLibrary\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\XRpgLibrary\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\XRpgLibrary\bin\x86\Debug\XRpgLibrary.dll
+C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\XRpgLibrary\bin\x86\Debug\XRpgLibrary.pdb
+C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\XRpgLibrary\obj\x86\Debug\XRpgLibrary.dll
+C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\XRpgLibrary\obj\x86\Debug\XRpgLibrary.pdb
