@@ -15,7 +15,7 @@ namespace RpgLibrary.ItemClasses
         int defenseModifier;
 
         #endregion
-
+        //test
         #region Property region
 
         public ArmorLocation Location
