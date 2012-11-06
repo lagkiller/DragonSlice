@@ -40,6 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CharacterClasses\AttributePair.cs" />
+    <Compile Include="CharacterClasses\Entity.cs" />
+    <Compile Include="CharacterClasses\EntityData.cs" />
+    <Compile Include="CharacterClasses\Magician.cs" />
+    <Compile Include="CharacterClasses\Priest.cs" />
+    <Compile Include="CharacterClasses\Rogue.cs" />
+    <Compile Include="CharacterClasses\Warrior.cs" />
     <Compile Include="ItemClasses\Armor.cs" />
     <Compile Include="ItemClasses\BaseItem.cs" />
     <Compile Include="ItemClasses\ItemManager.cs" />
