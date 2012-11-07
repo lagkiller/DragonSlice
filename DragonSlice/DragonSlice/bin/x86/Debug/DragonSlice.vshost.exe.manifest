@@ -93,38 +93,38 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DragonSlice.exe" size="52736">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DragonSlice.exe" size="55296">
       <assemblyIdentity name="DragonSlice" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>rg03OzAvbniXJuaNy10s239oSY8=</dsig:DigestValue>
+        <dsig:DigestValue>KV4vlpU3pAMl57l27XsIwhxbYEw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RpgLibrary.dll" size="14336">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RpgLibrary.dll" size="16896">
       <assemblyIdentity name="RpgLibrary" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>2lHhEn5JysHaXYHXwXq3qhe99fM=</dsig:DigestValue>
+        <dsig:DigestValue>dIAj9vPUXOUaMDuc3TL8q6u8JyA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="XRpgLibrary.dll" size="27136">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="XRpgLibrary.dll" size="30720">
       <assemblyIdentity name="XRpgLibrary" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ZDBi3PPoS40NQeIw0v3mW3hNCH8=</dsig:DigestValue>
+        <dsig:DigestValue>WXXOArexC7BRaxqvMH5aA8cBH84=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -153,6 +153,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>Abbi9CQI2Jd2LUiXl8yalx6ayqk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Content\GUI\listBoxImage.xnb" size="576187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>599PdFb66kOnnRe7zRcsHd+yz6s=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Content\GUI\rightarrowUp.xnb" size="4283">

@@ -6,19 +6,50 @@ using System.Text;
 namespace RpgLibrary.CharacterClasses
 {
     public enum EntityGender { Male, Female, Unknown };
+    public enum EntityType { Character, NPC, Monster, Creature };
 
-    public abstract class Entity
+    public sealed class Entity
     {
         #region Vital Field and Property region
 
-        protected string entityType;
-        protected EntityGender gender;
+        private string entityName;
+        private string entityClass;
+        private EntityGender gender;
+        private EntityType entityType;
 
-        public string EntityType
+        public string EntityName
+        {
+            get
+            {
+                return entityName;
+            }
+            private set
+            {
+                entityName = value;
+            }
+        }
+
+        public string EntityClass
+        {
+            get
+            {
+                return entityClass;
+            }
+            private set
+            {
+                entityClass = value;
+            }
+        }
+
+        public EntityType EntityType
         {
             get
             {
                 return entityType;
+            }
+            private set
+            {
+                entityType = value;
             }
         }
 
@@ -28,7 +59,7 @@ namespace RpgLibrary.CharacterClasses
             {
                 return gender;
             }
-            protected set
+            private set
             {
                 gender = value;
             }
@@ -38,19 +69,19 @@ namespace RpgLibrary.CharacterClasses
 
         #region Basic Attribute and Property region
 
-        protected int strength;
-        protected int dexterity;
-        protected int intelligence;
-        protected int agility;
-        protected int wisdom;
-        protected int vitality;
+        private int strength;
+        private int dexterity;
+        private int intelligence;
+        private int agility;
+        private int wisdom;
+        private int vitality;
 
-        protected int strengthModifier;
-        protected int dexterityModifier;
-        protected int intelligenceModifier;
-        protected int agilityModifier;
-        protected int wisdomModifier;
-        protected int vitalityModifier;
+        private int strengthModifier;
+        private int dexterityModifier;
+        private int intelligenceModifier;
+        private int agilityModifier;
+        private int wisdomModifier;
+        private int vitalityModifier;
 
         public int Strength
         {
@@ -58,7 +89,7 @@ namespace RpgLibrary.CharacterClasses
             {
                 return strength + strengthModifier;
             }
-            protected set
+            private set
             {
                 strength = value;
             }
@@ -70,7 +101,7 @@ namespace RpgLibrary.CharacterClasses
             {
                 return dexterity + dexterityModifier;
             }
-            protected set
+            private set
             {
                 dexterity = value;
             }
@@ -82,7 +113,7 @@ namespace RpgLibrary.CharacterClasses
             {
                 return intelligence + intelligenceModifier;
             }
-            protected set
+            private set
             {
                 intelligence = value;
             }
@@ -94,7 +125,7 @@ namespace RpgLibrary.CharacterClasses
             {
                 return agility + agilityModifier;
             }
-            protected set
+            private set
             {
                 agility = value;
             }
@@ -106,7 +137,7 @@ namespace RpgLibrary.CharacterClasses
             {
                 return wisdom + wisdomModifier;
             }
-            protected set
+            private set
             {
                 wisdom = value;
             }
@@ -118,7 +149,7 @@ namespace RpgLibrary.CharacterClasses
             {
                 return vitality + vitalityModifier;
             }
-            protected set
+            private set
             {
                 vitality = value;
             }
@@ -128,9 +159,9 @@ namespace RpgLibrary.CharacterClasses
 
         #region Calculated Attribute Field and Property region
 
-        protected AttributePair health;
-        protected AttributePair stamina;
-        protected AttributePair mana;
+        private AttributePair health;
+        private AttributePair stamina;
+        private AttributePair mana;
 
         public AttributePair Health
         {
@@ -156,16 +187,16 @@ namespace RpgLibrary.CharacterClasses
             }
         }
 
-        protected int attack;
-        protected int damage;
-        protected int defense;
+        private int attack;
+        private int damage;
+        private int defense;
 
         #endregion
 
         #region Level Field and Property region
 
-        protected int level;
-        protected long experience;
+        private int level;
+        private long experience;
 
         public int Level
         {
@@ -173,7 +204,7 @@ namespace RpgLibrary.CharacterClasses
             {
                 return level;
             }
-            protected set
+            private set
             {
                 level = value;
             }
@@ -185,7 +216,7 @@ namespace RpgLibrary.CharacterClasses
             {
                 return experience;
             }
-            protected set
+            private set
             {
                 experience = value;
             }
@@ -209,9 +240,12 @@ namespace RpgLibrary.CharacterClasses
             mana = new AttributePair(0);
         }
 
-        public Entity(EntityData entityData)
+        public Entity(string name, EntityData entityData, EntityGender gender, EntityType entityType)
         {
-            entityType = entityData.EntityName;
+            EntityName = name;
+            EntityClass = entityData.EntityName;
+            Gender = gender;
+            EntityType = entityType;
             Strength = entityData.Strength;
             Dexterity = entityData.Dexterity;
             Intelligence = entityData.Intelligence;

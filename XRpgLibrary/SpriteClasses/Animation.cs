@@ -9,7 +9,7 @@ namespace XRpgLibrary.SpriteClasses
 {
     public enum AnimationKey { Down, Left, Right, Up }
 
-    public class Animation : ICloneable
+    public class Animation
     {
         #region Field region
 

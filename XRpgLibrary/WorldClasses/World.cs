@@ -15,7 +15,7 @@ using XRpgLibrary.SpriteClasses;
 
 namespace XRpgLibrary.WorldClasses
 {
-    public class World
+    public class World : DrawableGameComponent
     {
         #region Graphic Field and Property region
 
@@ -39,13 +39,45 @@ namespace XRpgLibrary.WorldClasses
 
         #region Level Field and Property region
 
+        readonly List<Level> levels = new List<Level>();
+        int currentLevel = -1;
 
+        public List<Level> Levels
+        {
+            get
+            {
+                return levels;
+            }
+        }
+
+        public int CurrentLevel
+        {
+            get
+            {
+                return currentLevel;
+            }
+            set
+            {
+                if (value < 0 || value >= levels.Count)
+                {
+                    throw new IndexOutOfRangeException();
+                }
+
+                if (levels[value] == null)
+                {
+                    throw new NullReferenceException();
+                }
+
+                currentLevel = value;
+            }
+        }
 
         #endregion
 
         #region Constructor region
 
-        public World(Rectangle screenRectangle)
+        public World(Game game, Rectangle screenRectangle)
+            : base(game)
         {
             screenRect = screenRectangle;
         }
@@ -59,9 +91,14 @@ namespace XRpgLibrary.WorldClasses
 
         }
 
-        public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
+        public void Draw(GameTime gameTime)
         {
+            base.Draw(gameTime);
+        }
 
+        public void DrawLevel(SpriteBatch spriteBatch, Camera camera)
+        {
+            levels[currentLevel].Draw(spriteBatch, camera);
         }
 
         #endregion

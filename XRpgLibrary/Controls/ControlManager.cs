@@ -20,6 +20,7 @@ namespace XRpgLibrary.Controls
         #region Fields and Properties
 
         int selectedControl = 0;
+        bool acceptInput = true;
 
         static SpriteFont spriteFont;
 
@@ -28,6 +29,18 @@ namespace XRpgLibrary.Controls
             get
             {
                 return spriteFont;
+            }
+        }
+
+        public bool AcceptInput
+        {
+            get
+            {
+                return acceptInput;
+            }
+            set
+            {
+                acceptInput = value;
             }
         }
 
@@ -76,11 +89,20 @@ namespace XRpgLibrary.Controls
                 }
             }
 
-            if (InputHandler.ButtonPressed(Buttons.LeftThumbstickUp, playerIndex) || InputHandler.ButtonPressed(Buttons.DPadUp, playerIndex) || InputHandler.KeyPressed(Keys.Up))
+            if (!AcceptInput)
+            {
+                return;
+            }
+
+            if (InputHandler.ButtonPressed(Buttons.LeftThumbstickUp, playerIndex) ||
+                InputHandler.ButtonPressed(Buttons.DPadUp, playerIndex) ||
+                InputHandler.KeyPressed(Keys.Up))
             {
                 PreviousControl();
             }
-            if (InputHandler.ButtonPressed(Buttons.LeftThumbstickDown, playerIndex) || InputHandler.ButtonPressed(Buttons.DPadDown, playerIndex) || InputHandler.KeyPressed(Keys.Down))
+            if (InputHandler.ButtonPressed(Buttons.LeftThumbstickDown, playerIndex) ||
+                InputHandler.ButtonPressed(Buttons.DPadDown, playerIndex) ||
+                InputHandler.KeyPressed(Keys.Down))
             {
                 NextControl();
             }

@@ -97,7 +97,7 @@ namespace XRpgLibrary.Controls
             }
         }
 
-        public bool HasFocus
+        public virtual bool HasFocus
         {
             get
             {

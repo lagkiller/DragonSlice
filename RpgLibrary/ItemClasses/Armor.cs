@@ -66,7 +66,7 @@ namespace RpgLibrary.ItemClasses
             ArmorLocation location,
             int defenseValue,
             int defenseModifier,
-            params Type[] allowableClasses)
+            params string[] allowableClasses)
             : base(armorName, armorType, price, weight, allowableClasses)
         {
             Location = location;
@@ -80,7 +80,7 @@ namespace RpgLibrary.ItemClasses
 
         public override object Clone()
         {
-            Type[] allowedClasses = new Type[allowableClasses.Count];
+            string[] allowedClasses = new string[allowableClasses.Count];
 
             for (int i = 0; i < allowableClasses.Count; i++)
             {
@@ -107,9 +107,9 @@ namespace RpgLibrary.ItemClasses
             armorString += DefenseValue.ToString() + ", ";
             armorString += DefenseModifier.ToString();
 
-            foreach (Type t in allowableClasses)
+            foreach (string s in allowableClasses)
             {
-                armorString += ", " + t.Name;
+                armorString += ", " + s;
             }
 
             return armorString;

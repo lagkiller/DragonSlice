@@ -19,7 +19,7 @@ namespace RpgLibrary.CharacterClasses
         public int Vitality;
 
         public string HealthFormula;
-        public string AgilityFormula;
+        public string StaminaFormula;
         public string ManaFormula;
 
         #endregion
@@ -31,20 +31,66 @@ namespace RpgLibrary.CharacterClasses
 
         }
 
-        #endregion
-
-        #region Static method region
-
-        public static void ToFile(string filename)
+        public EntityData(
+            string entityName,
+            int strength,
+            int dexterirty,
+            int intelligence,
+            int agility,
+            int wisdom,
+            int vitality,
+            string health,
+            string stamina,
+            string mana)
         {
-
+            EntityName = entityName;
+            Strength = strength;
+            Dexterity = dexterirty;
+            Intelligence = intelligence;
+            Agility = agility;
+            Wisdom = wisdom;
+            Vitality = vitality;
+            HealthFormula = health;
+            StaminaFormula = stamina;
+            ManaFormula = mana;
         }
 
-        public static EntityData FromFile(string filename)
-        {
-            EntityData entity = new EntityData();
+        #endregion
 
-            return entity;
+        #region Method region
+
+        public override string ToString()
+        {
+            string toString = EntityName + ", ";
+            toString += Strength.ToString() + ", ";
+            toString += Dexterity.ToString() + ", ";
+            toString += Intelligence.ToString() + ", ";
+            toString += Agility.ToString() + ", ";
+            toString += Wisdom.ToString() + ", ";
+            toString += Vitality.ToString() + ", ";
+            toString += HealthFormula + ", ";
+            toString += StaminaFormula + ", ";
+            toString += ManaFormula;
+
+            return toString;
+        }
+
+        public object Clone()
+        {
+            EntityData data = new EntityData();
+
+            data.EntityName = this.EntityName;
+            data.Strength = this.Strength;
+            data.Dexterity = this.Dexterity;
+            data.Intelligence = this.Intelligence;
+            data.Agility = this.Agility;
+            data.Wisdom = this.Wisdom;
+            data.Vitality = this.Vitality;
+            data.HealthFormula = this.HealthFormula;
+            data.StaminaFormula = this.StaminaFormula;
+            data.ManaFormula = this.ManaFormula;
+
+            return data;
         }
 
         #endregion
