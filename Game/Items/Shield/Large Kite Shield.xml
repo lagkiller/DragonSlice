@@ -9,7 +9,7 @@
     <DefenseValue>25</DefenseValue>
     <DefenseModifier>0</DefenseModifier>
     <AllowableClasses>
-      <Item>Fighter</Item>
+      <Item>Warrior</Item>
     </AllowableClasses>
   </Asset>
 </XnaContent>

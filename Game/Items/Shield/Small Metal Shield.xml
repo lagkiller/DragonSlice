@@ -9,7 +9,7 @@
     <DefenseValue>8</DefenseValue>
     <DefenseModifier>0</DefenseModifier>
     <AllowableClasses>
-      <Item>Fighter</Item>
+      <Item>Warrior</Item>
       <Item>Rogue</Item>
       <Item>Priest</Item>
     </AllowableClasses>

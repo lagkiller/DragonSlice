@@ -12,7 +12,7 @@
     <DamageValue>10</DamageValue>
     <DamageModifier>0</DamageModifier>
     <AllowableClasses>
-      <Item>Fighter</Item>
+      <Item>Warrior</Item>
       <Item>Priest</Item>
     </AllowableClasses>
   </Asset>

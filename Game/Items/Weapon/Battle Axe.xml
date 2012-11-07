@@ -12,7 +12,7 @@
     <DamageValue>16</DamageValue>
     <DamageModifier>0</DamageModifier>
     <AllowableClasses>
-      <Item>Fighter</Item>
+      <Item>Warrior</Item>
     </AllowableClasses>
   </Asset>
 </XnaContent>

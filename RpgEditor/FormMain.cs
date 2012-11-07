@@ -154,7 +154,7 @@ namespace RpgEditor
         {
             FolderBrowserDialog folderDialog = new FolderBrowserDialog();
 
-            folderDialog.Description = "Select Game folder";
+            folderDialog.Description = "Select the folder that game.xml is located in.";
             folderDialog.SelectedPath = Application.StartupPath;
 
             bool tryAgain = false;
@@ -166,7 +166,7 @@ namespace RpgEditor
 
                 if(folderResult == DialogResult.OK)
                 {
-                    if (File.Exists(folderDialog.SelectedPath + @"\Game\Game.xml"))
+                    if (File.Exists(folderDialog.SelectedPath + @"\Game.xml"))
                     {
                         try
                         {
@@ -280,7 +280,7 @@ namespace RpgEditor
 
         private void OpenGame(string path)
         {
-            gamePath = Path.Combine(path, "Game");
+            gamePath = path;
             classPath = Path.Combine(gamePath, "Classes");
             itemPath = Path.Combine(gamePath, "Items");
 

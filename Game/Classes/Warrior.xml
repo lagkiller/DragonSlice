@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <XnaContent xmlns:CharacterClasses="RpgLibrary.CharacterClasses">
   <Asset Type="CharacterClasses:EntityData">
-    <EntityName>Rogue</EntityName>
-    <Strength>10</Strength>
-    <Dexterity>14</Dexterity>
-    <Intelligence>14</Intelligence>
+    <EntityName>Warrior</EntityName>
+    <Strength>14</Strength>
+    <Dexterity>12</Dexterity>
+    <Intelligence>10</Intelligence>
     <Agility>12</Agility>
     <Wisdom>10</Wisdom>
-    <Vitality>10</Vitality>
-    <HealthFormula>10|VIT|8</HealthFormula>
+    <Vitality>12</Vitality>
+    <HealthFormula>20|VIT|12</HealthFormula>
     <StaminaFormula>12|AGI|12</StaminaFormula>
     <ManaFormula>0|0|0</ManaFormula>
   </Asset>

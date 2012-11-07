@@ -135,7 +135,11 @@ namespace RpgEditor
             foreach (string s in fileNames)
             {
                 EntityData entityData = XnaSerializer.Deserialize<EntityData>(s);
-                entityDataManager.EntityData.Add(entityData.EntityName, entityData);
+                if (!entityDataManager.EntityData.ContainsKey(entityData.EntityName))
+                {
+                    //EntityData entityData = XnaSerializer.Deserialize<EntityData>(s);
+                    entityDataManager.EntityData.Add(entityData.EntityName, entityData);
+                }
             }
         }
 

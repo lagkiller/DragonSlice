@@ -12,7 +12,7 @@
     <DamageValue>6</DamageValue>
     <DamageModifier>0</DamageModifier>
     <AllowableClasses>
-      <Item>Wizard</Item>
+      <Item>Magician</Item>
     </AllowableClasses>
   </Asset>
 </XnaContent>

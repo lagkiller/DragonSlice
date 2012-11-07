@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <XnaContent xmlns:CharacterClasses="RpgLibrary.CharacterClasses">
   <Asset Type="CharacterClasses:EntityData">
-    <EntityName>Fighter</EntityName>
+    <EntityName>Warrior</EntityName>
     <Strength>14</Strength>
     <Dexterity>12</Dexterity>
-    <Cunning>10</Cunning>
-    <Willpower>12</Willpower>
-    <Magic>10</Magic>
-    <Constitution>12</Constitution>
+    <Intelligence>10</Intelligence>
+    <Agility>12</Agility>
+    <Wisdom>10</Wisdom>
+    <Vitality>12</Vitality>
     <HealthFormula>20|CON|12</HealthFormula>
     <StaminaFormula>12|WIL|12</StaminaFormula>
-    <MagicFormula>0|0|0</MagicFormula>
+    <ManaFormula>0|0|0</ManaFormula>
   </Asset>
 </XnaContent>

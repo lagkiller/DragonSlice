@@ -10,10 +10,10 @@
     <DefenseValue>5</DefenseValue>
     <DefenseModifier>0</DefenseModifier>
     <AllowableClasses>
-      <Item>Fighter</Item>
+      <Item>Warrior</Item>
       <Item>Rogue</Item>
       <Item>Priest</Item>
-      <Item>Wizard</Item>
+      <Item>Magician</Item>
     </AllowableClasses>
   </Asset>
 </XnaContent>
