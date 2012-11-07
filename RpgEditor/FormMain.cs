@@ -63,6 +63,8 @@ namespace RpgEditor
         {
             InitializeComponent();
 
+            this.FormClosing += new FormClosingEventHandler(FormMain_FormClosing);
+
             newGameToolStripMenuItem.Click += new EventHandler(newGameToolStripMenuItem_Click);
             openGameToolStripMenuItem.Click += new EventHandler(openGameToolStripMenuItem_Click);
             saveGameToolStripMenuItem.Click += new EventHandler(saveGameToolStripMenuItem_Click);
@@ -255,6 +257,20 @@ namespace RpgEditor
                         itemsToolStripMenuItem.Enabled = true;
                     }
                 }
+            }
+        }
+
+        void FormMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "Unsaved changes will be lost. Are you sure you want to exit?",
+                "Exit?",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning);
+
+            if (result == DialogResult.No)
+            {
+                e.Cancel = true;
             }
         }
 
