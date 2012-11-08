@@ -100,19 +100,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>KV4vlpU3pAMl57l27XsIwhxbYEw=</dsig:DigestValue>
+        <dsig:DigestValue>9yODZPMwUpFTsTk4k3DcqC6ng0s=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RpgLibrary.dll" size="16896">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RpgLibrary.dll" size="17408">
       <assemblyIdentity name="RpgLibrary" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>dIAj9vPUXOUaMDuc3TL8q6u8JyA=</dsig:DigestValue>
+        <dsig:DigestValue>ZROvqWnWB7yqx99cCzU1bKjzyi4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -124,7 +124,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>WXXOArexC7BRaxqvMH5aA8cBH84=</dsig:DigestValue>
+        <dsig:DigestValue>rc6Wn6G9caX7n/jm2uI9kGVRXPk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
