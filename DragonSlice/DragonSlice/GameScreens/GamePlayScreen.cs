@@ -97,7 +97,7 @@ namespace DragonSlice.GameScreens
 
             base.Draw(gameTime);
 
-            world.DrawLevel(GameRef.SpriteBatch, player.Camera);
+            world.DrawLevel(gameTime, GameRef.SpriteBatch, player.Camera);
             player.Draw(gameTime, GameRef.SpriteBatch);
 
             GameRef.SpriteBatch.End();

@@ -100,31 +100,31 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>9yODZPMwUpFTsTk4k3DcqC6ng0s=</dsig:DigestValue>
+        <dsig:DigestValue>mJaM8ivukwJ0CHDgCUAKUVfFk8I=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RpgLibrary.dll" size="17408">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RpgLibrary.dll" size="22016">
       <assemblyIdentity name="RpgLibrary" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ZROvqWnWB7yqx99cCzU1bKjzyi4=</dsig:DigestValue>
+        <dsig:DigestValue>RKZntthCu4qzlnU+m2zuBjlPt3A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="XRpgLibrary.dll" size="30720">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="XRpgLibrary.dll" size="33792">
       <assemblyIdentity name="XRpgLibrary" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>rc6Wn6G9caX7n/jm2uI9kGVRXPk=</dsig:DigestValue>
+        <dsig:DigestValue>7rNjxYCI6RXIMSzXp0ZR4EwnzkA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

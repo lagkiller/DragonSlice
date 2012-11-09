@@ -12,6 +12,7 @@ namespace RpgLibrary.ItemClasses
         readonly Dictionary<string, ArmorData> armorData = new Dictionary<string, ArmorData>();
         readonly Dictionary<string, ShieldData> shieldData = new Dictionary<string, ShieldData>();
         readonly Dictionary<string, WeaponData> weaponData = new Dictionary<string, WeaponData>();
+        readonly Dictionary<string, IngredientData> ingredientData = new Dictionary<string, IngredientData>();
 
         #endregion
 
@@ -38,6 +39,14 @@ namespace RpgLibrary.ItemClasses
             get
             {
                 return weaponData;
+            }
+        }
+
+        public Dictionary<string, IngredientData> IngredientData
+        {
+            get
+            {
+                return ingredientData;
             }
         }
 

@@ -134,7 +134,7 @@ namespace XRpgLibrary.SpriteClasses
             }
         }
 
-        public void Draw(GameTime gameTime, SpriteBatch spriteBatch, Camera camera)
+        public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             spriteBatch.Draw(
                 texture,

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 
 using XRpgLibrary.TileEngine;
+using XRpgLibrary.CharacterClasses;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -15,6 +16,7 @@ namespace XRpgLibrary.WorldClasses
         #region Field region
 
         readonly TileMap map;
+        readonly List<Character> characters;
 
         #endregion
 
@@ -28,6 +30,14 @@ namespace XRpgLibrary.WorldClasses
             }
         }
 
+        public List<Character> Characters
+        {
+            get
+            {
+                return characters;
+            }
+        }
+
         #endregion
 
         #region Constructor region
@@ -35,6 +45,7 @@ namespace XRpgLibrary.WorldClasses
         public Level(TileMap tileMap)
         {
             map = tileMap;
+            characters = new List<Character>();
         }
 
         #endregion
@@ -43,12 +54,19 @@ namespace XRpgLibrary.WorldClasses
 
         public void Update(GameTime gameTime)
         {
-
+            foreach (Character character in characters)
+            {
+                character.Update(gameTime);
+            }
         }
 
-        public void Draw(SpriteBatch spriteBatch, Camera camera)
+        public void Draw(GameTime gameTime, SpriteBatch spriteBatch, Camera camera)
         {
             map.Draw(spriteBatch, camera);
+            foreach(Character character in characters)
+            {
+                character.Draw(gameTime, spriteBatch);
+            }
         }
 
         #endregion
