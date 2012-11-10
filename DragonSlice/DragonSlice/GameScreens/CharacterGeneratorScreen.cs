@@ -12,6 +12,9 @@ using XRpgLibrary.Controls;
 using XRpgLibrary.SpriteClasses;
 using XRpgLibrary.TileEngine;
 using XRpgLibrary.WorldClasses;
+using XRpgLibrary.ItemClasses;
+
+using RpgLibrary.ItemClasses;
 
 using DragonSlice.Components;
 
@@ -26,6 +29,7 @@ namespace DragonSlice.GameScreens
         PictureBox backgroundImage;
         PictureBox characterImage;
         Texture2D[,] characterImages;
+        Texture2D containers;
 
         string[] genderItems = { "Male", "Female"};
         string[] classItems = { "Warrior", "Magician", "Rogue", "Priest"};
@@ -75,6 +79,7 @@ namespace DragonSlice.GameScreens
 
             LoadImages();
             CreateControls();
+            containers = Game.Content.Load<Texture2D>(@"ObjectSprites\containers");
         }
 
         public override void Update(GameTime gameTime)
@@ -247,6 +252,23 @@ namespace DragonSlice.GameScreens
 
             TileMap map = new TileMap(tilesets, mapLayers);
             Level level = new Level(map);
+
+            ChestData chestData = new ChestData();
+            chestData.Name = "A chest";
+            chestData.MinGold = 10;
+            chestData.MaxGold = 101;
+
+            Chest chest = new Chest(chestData);
+
+            BaseSprite chestSprite = new BaseSprite(
+                containers,
+                new Rectangle(0, 0, 32, 32),
+                new Point(10, 10));
+
+            ItemSprite itemSprite = new ItemSprite(
+                chest,
+                chestSprite);
+            level.Chests.Add(itemSprite);
 
             World world = new World(GameRef, GameRef.ScreenRectangle);
             world.Levels.Add(level);

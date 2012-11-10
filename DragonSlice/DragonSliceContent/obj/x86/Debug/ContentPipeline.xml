@@ -145,6 +145,15 @@
       <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\GUI\listBoxImage.xnb</Output>
       <Time>2012-11-06T19:30:58.0080986-05:00</Time>
     </Item>
+    <Item>
+      <Source>ObjectSprites\containers.png</Source>
+      <Name>ObjectSprites\containers</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\ObjectSprites\containers.xnb</Output>
+      <Time>2012-11-09T21:20:07.1911241-05:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

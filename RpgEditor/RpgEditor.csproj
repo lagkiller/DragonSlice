@@ -79,6 +79,12 @@
     <Compile Include="FormEntityData.Designer.cs">
       <DependentUpon>FormEntityData.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKey.Designer.cs">
+      <DependentUpon>FormKey.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormEntityData.resx">
       <DependentUpon>FormEntityData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKey.resx">
+      <DependentUpon>FormKey.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>

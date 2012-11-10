@@ -29,3 +29,4 @@ C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\Dr
 C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\PlayerSprites\MaleWarrior.xnb
 C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\PlayerSprites\MaleMagician.xnb
 C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\GUI\listBoxImage.xnb
+C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\ObjectSprites\containers.xnb
