@@ -1,6 +1,24 @@
 DragonSlice
 ===========
-Game Infrastructure Progress: 50%
+Game Infrastructure Progress: 60%
+
+TODO:
+-Finish level editor
+	-Collision layers
+	-Character placement(npc, monster, animals)
+	-Item placement(chests, keys)
+-Add Combat System
+	-Skills
+	-Talents
+-Item System
+	-Loot
+	-Upgrades
+-Inventory System
+-Dialogue System
+-AI System
+-Mouse Input System
+-Chat System
+-Multiplayerfication
 
 DragonSlice Folder: 
 =
