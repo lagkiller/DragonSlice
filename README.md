@@ -1,5 +1,7 @@
 DragonSlice
 ===========
+NOTICE: DO NOT use RpgLibrary anymore. It is now obsolete.
+----
 Game Infrastructure Progress: 60%
 ----
 TODO:
