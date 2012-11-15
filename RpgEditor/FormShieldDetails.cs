@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-using RpgLibrary.ItemClasses;
+using XRpgLibrary.ItemClasses;
 
 namespace RpgEditor
 {

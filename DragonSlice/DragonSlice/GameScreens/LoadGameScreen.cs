@@ -13,8 +13,11 @@ using XRpgLibrary.Controls;
 using XRpgLibrary.SpriteClasses;
 using XRpgLibrary.TileEngine;
 using XRpgLibrary.WorldClasses;
+using XRpgLibrary.CharacterClasses;
 
 using DragonSlice.Components;
+
+using XRpgLibrary.CharacterClasses;
 
 namespace DragonSlice.GameScreens
 {
@@ -105,23 +108,23 @@ namespace DragonSlice.GameScreens
 
         void loadListBox_Leave(object sender, EventArgs e)
         {
+            loadLinkLabel.HasFocus = true;
             ControlManager.AcceptInput = true;
         }
 
         void loadListBox_Selected(object sender, EventArgs e)
         {
             loadLinkLabel.HasFocus = true;
-            loadListBox.HasFocus = false;
             ControlManager.AcceptInput = true;
 
-            StateManager.ChangeState(GameRef.GamePlayScreen);
+            Transition(ChangeType.Change, GameRef.GamePlayScreen);
             CreatePlayer();
             CreateWorld();
         }
 
         void exitLinkLabel_Selected(object sender, EventArgs e)
         {
-            StateManager.PopState();
+            Transition(ChangeType.Pop, null);
         }
 
         void loadLinkLabel_Selected(object sender, EventArgs e)
@@ -136,10 +139,11 @@ namespace DragonSlice.GameScreens
             Dictionary<AnimationKey, Animation> animations = new Dictionary<AnimationKey, Animation>();
 
             Animation animation = new Animation(3, 32, 32, 0, 0);
-            animations.Add(AnimationKey.Left, animation);
+            animations.Add(AnimationKey.Down, animation);
 
             animation = new Animation(3, 32, 32, 0, 32);
             animations.Add(AnimationKey.Left, animation);
+            
 
             animation = new Animation(3, 32, 32, 0, 64);
             animations.Add(AnimationKey.Right, animation);
@@ -151,7 +155,14 @@ namespace DragonSlice.GameScreens
                 GameRef.Content.Load<Texture2D>(@"PlayerSprites\MaleWarrior"),
                 animations);
 
-            GamePlayScreen.Player = new Player(GameRef, sprite);
+            Entity entity = new Entity(
+                "Nanuk",
+                DataManager.EntityData["Warrior"],
+                EntityGender.Male,
+                EntityType.Character);
+
+            Character character = new Character(entity, sprite);
+            GamePlayScreen.Player = new Player(GameRef, character);
         }
 
         private void CreateWorld()
@@ -172,7 +183,7 @@ namespace DragonSlice.GameScreens
             {
                 for (int x = 0; x < layer.Width; x++)
                 {
-                    Tile tile = new Tile(0, 0);
+                    XRpgLibrary.TileEngine.Tile tile = new XRpgLibrary.TileEngine.Tile(0, 0);
 
                     layer.SetTile(x, y, tile);
                 }
@@ -188,13 +199,13 @@ namespace DragonSlice.GameScreens
                 int y = random.Next(0, 100);
                 int index = random.Next(2, 14);
 
-                Tile tile = new Tile(index, 0);
+                XRpgLibrary.TileEngine.Tile tile = new XRpgLibrary.TileEngine.Tile(index, 0);
                 splatter.SetTile(x, y, tile);
             }
 
-            splatter.SetTile(1, 0, new Tile(0, 1));
-            splatter.SetTile(2, 0, new Tile(2, 1));
-            splatter.SetTile(3, 0, new Tile(0, 1));
+            splatter.SetTile(1, 0, new XRpgLibrary.TileEngine.Tile(0, 1));
+            splatter.SetTile(2, 0, new XRpgLibrary.TileEngine.Tile(2, 1));
+            splatter.SetTile(3, 0, new XRpgLibrary.TileEngine.Tile(0, 1));
 
             List<MapLayer> mapLayers = new List<MapLayer>();
             mapLayers.Add(layer);

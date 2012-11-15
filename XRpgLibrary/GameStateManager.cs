@@ -12,6 +12,8 @@ using Microsoft.Xna.Framework.Media;
 
 namespace XRpgLibrary
 {
+    public enum ChangeType { Change, Pop, Push }
+
     /// <summary>
     /// This is a game component that implements IUpdateable.
     /// </summary>

@@ -5,9 +5,9 @@ using System.Text;
 
 using XRpgLibrary.SpriteClasses;
 
-using RpgLibrary.CharacterClasses;
-using RpgLibrary.ConversationClasses;
-using RpgLibrary.QuestClasses;
+using XRpgLibrary.CharacterClasses;
+using XRpgLibrary.ConversationClasses;
+using XRpgLibrary.QuestClasses;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;

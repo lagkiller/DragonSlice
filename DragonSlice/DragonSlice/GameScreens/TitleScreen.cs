@@ -78,7 +78,7 @@ namespace DragonSlice.GameScreens
 
         private void startLabel_Selected(object sender, EventArgs e)
         {
-            StateManager.PushState(GameRef.StartMenuScreen);
+            Transition(ChangeType.Push, GameRef.StartMenuScreen);
         }
 
         #endregion

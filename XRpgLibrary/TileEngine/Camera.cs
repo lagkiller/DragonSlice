@@ -34,7 +34,7 @@ namespace XRpgLibrary.TileEngine
             {
                 return position;
             }
-            private set
+            set
             {
                 position = value;
             }
@@ -149,7 +149,7 @@ namespace XRpgLibrary.TileEngine
                 motion.Normalize();
                 position += motion * speed;
                 LockCamera();
-            }     
+            }
         }
 
         public void ZoomIn()
@@ -185,7 +185,7 @@ namespace XRpgLibrary.TileEngine
             LockCamera();
         }
 
-        private void LockCamera()
+        public void LockCamera()
         {
             position.X = MathHelper.Clamp(position.X,
                 0,

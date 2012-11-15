@@ -6,7 +6,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-using RpgLibrary.ItemClasses;
+using XRpgLibrary.ItemClasses;
 using XRpgLibrary.SpriteClasses;
 
 namespace XRpgLibrary.ItemClasses

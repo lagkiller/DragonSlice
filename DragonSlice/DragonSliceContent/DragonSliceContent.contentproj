@@ -46,6 +46,7 @@
       <Name>ControlFont</Name>
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
+      <SubType>Designer</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -141,6 +142,288 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Game\Chests\Big Gold Chest.xml">
+      <Name>Big Gold Chest</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Chests\Broken Crate.xml">
+      <Name>Broken Crate</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Chests\Gold Chest.xml">
+      <Name>Gold Chest</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Chests\Plain Chest.xml">
+      <Name>Plain Chest</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Chests\Rusty Chest.xml">
+      <Name>Rusty Chest</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Classes\Fighter.xml">
+      <Name>Fighter</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Classes\Magician.xml">
+      <Name>Magician</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Classes\Priest.xml">
+      <Name>Priest</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Classes\Rogue.xml">
+      <Name>Rogue</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Classes\Warrior.xml">
+      <Name>Warrior</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Classes\Wizard.xml">
+      <Name>Wizard</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Game.xml">
+      <Name>Game</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Armor\Chain Mail Boots.xml">
+      <Name>Chain Mail Boots</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Armor\Chain Mail Gloves.xml">
+      <Name>Chain Mail Gloves</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Armor\Chain Mail Helm.xml">
+      <Name>Chain Mail Helm</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Armor\Chain Mail.xml">
+      <Name>Chain Mail</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Armor\Leather Armor.xml">
+      <Name>Leather Armor</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Armor\Leather Boots.xml">
+      <Name>Leather Boots</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Armor\Leather Gloves.xml">
+      <Name>Leather Gloves</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Armor\Leather Helm.xml">
+      <Name>Leather Helm</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Armor\Light Robes.xml">
+      <Name>Light Robes</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Armor\Medium Robes.xml">
+      <Name>Medium Robes</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Armor\Studded Leather Armor.xml">
+      <Name>Studded Leather Armor</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Armor\Studded Leather Boots.xml">
+      <Name>Studded Leather Boots</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Armor\Studded Leather Gloves.xml">
+      <Name>Studded Leather Gloves</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Armor\Studded Leather Helm.xml">
+      <Name>Studded Leather Helm</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Shield\Heavy Tower Shield.xml">
+      <Name>Heavy Tower Shield</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Shield\Large Kite Shield.xml">
+      <Name>Large Kite Shield</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Shield\Large Metal Shield.xml">
+      <Name>Large Metal Shield</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Shield\Large Wooden Shield.xml">
+      <Name>Large Wooden Shield</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Shield\Medium Metal Shield.xml">
+      <Name>Medium Metal Shield</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Shield\Medium Wooden Shield.xml">
+      <Name>Medium Wooden Shield</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Shield\Small Metal Shield.xml">
+      <Name>Small Metal Shield</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Shield\Small Wooded Shield.xml">
+      <Name>Small Wooded Shield</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Weapon\Acolyte Staff.xml">
+      <Name>Acolyte Staff</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Weapon\Apprentice Staff.xml">
+      <Name>Apprentice Staff</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Weapon\Battle Axe.xml">
+      <Name>Battle Axe</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Weapon\Broad Sword.xml">
+      <Name>Broad Sword</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Weapon\Club.xml">
+      <Name>Club</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Weapon\Dagger.xml">
+      <Name>Dagger</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Weapon\Flail.xml">
+      <Name>Flail</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Weapon\Great Sword.xml">
+      <Name>Great Sword</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Weapon\Halberd.xml">
+      <Name>Halberd</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Weapon\Long Sword.xml">
+      <Name>Long Sword</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Weapon\Mace.xml">
+      <Name>Mace</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Weapon\Short Sword.xml">
+      <Name>Short Sword</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Items\Weapon\War Axe.xml">
+      <Name>War Axe</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Keys\Gold Key.xml">
+      <Name>Gold Key</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Keys\Rusty Key.xml">
+      <Name>Rusty Key</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Game\Skills\Bartering.xml">
+      <Name>Bartering</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Skills\Herbalism.xml">
+      <Name>Herbalism</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Skills\Poison Making.xml">
+      <Name>Poison Making</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Game\Skills\Trap Making.xml">
+      <Name>Trap Making</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ObjectSprites\itemimages.png">
+      <Name>itemimages</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\XRpgLibrary\XRpgLibrary.csproj">
+      <Project>{C7525D52-15AB-4C4B-8603-17CB765F82DB}</Project>
+      <Name>XRpgLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
   <!--  To modify your build process, add your task inside one of the targets below and uncomment it. 

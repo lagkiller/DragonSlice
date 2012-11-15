@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using RpgLibrary.CharacterClasses;
+using XRpgLibrary.CharacterClasses;
+
 using XRpgLibrary.SpriteClasses;
+using XRpgLibrary.ItemClasses;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -17,6 +19,16 @@ namespace XRpgLibrary.CharacterClasses
 
         protected Entity entity;
         protected AnimatedSprite sprite;
+
+        protected GameItem head;
+        protected GameItem body;
+        protected GameItem hands;
+        protected GameItem feet;
+
+        protected GameItem mainHand;
+        protected GameItem offHand;
+
+        protected int handsFree;
 
         #endregion
 
@@ -35,6 +47,62 @@ namespace XRpgLibrary.CharacterClasses
             get
             {
                 return sprite;
+            }
+        }
+
+        public GameItem Head
+        {
+            get
+            {
+                return head;
+            }
+        }
+
+        public GameItem Body
+        {
+            get
+            {
+                return body;
+            }
+        }
+
+        public GameItem Hands
+        {
+            get
+            {
+                return hands;
+            }
+        }
+
+        public GameItem Feet
+        {
+            get
+            {
+                return feet;
+            }
+        }
+
+        public GameItem MainHand
+        {
+            get
+            {
+                return mainHand;
+            }
+        }
+
+        public GameItem OffHand
+        {
+            get
+            {
+                return offHand;
+            }
+        }
+
+        public int HandsFree
+        {
+            get
+            {
+                return handsFree;
             }
         }
 
@@ -67,6 +135,20 @@ namespace XRpgLibrary.CharacterClasses
         public virtual void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             sprite.Draw(gameTime, spriteBatch);
+        }
+
+        public virtual bool Equip(GameItem gameItem)
+        {
+            bool success = false;
+
+            return success;
+        }
+
+        public virtual bool Unequip(GameItem gameItem)
+        {
+            bool success = false;
+
+            return success;
         }
 
         #endregion

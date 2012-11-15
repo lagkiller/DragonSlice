@@ -8,8 +8,9 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 
-using RpgLibrary.ItemClasses;
-using RpgLibrary.CharacterClasses;
+using XRpgLibrary.ItemClasses;
+using XRpgLibrary.CharacterClasses;
+using XRpgLibrary.SkillClasses;
 
 namespace RpgEditor
 {
@@ -19,6 +20,7 @@ namespace RpgEditor
 
         protected static ItemDataManager itemManager;
         protected static EntityDataManager entityDataManager;
+        protected static SkillDataManager skillManager;
 
         #endregion
 
@@ -45,6 +47,14 @@ namespace RpgEditor
             private set
             {
                 entityDataManager = value;
+            }
+        }
+
+        public static SkillDataManager SkillManager
+        {
+            get
+            {
+                return skillManager;
             }
         }
 
@@ -175,6 +185,68 @@ namespace RpgEditor
             {
                 WeaponData weaponData = XnaSerializer.Deserialize<WeaponData>(s);
                 itemManager.WeaponData.Add(weaponData.Name, weaponData);
+            }
+        }
+
+        public static void WriteKeyData()
+        {
+            foreach (string s in ItemManager.KeyData.Keys)
+            {
+                XnaSerializer.Serialize<KeyData>(
+                    FormMain.KeyPath + @"\" + s + ".xml",
+                    ItemManager.KeyData[s]);
+            }
+        }
+
+        public static void WriteChestData()
+        {
+            foreach (string s in ItemManager.ChestData.Keys)
+            {
+                XnaSerializer.Serialize<ChestData>(
+                    FormMain.ChestPath + @"\" + s + ".xml",
+                    ItemManager.ChestData[s]);
+            }
+        }
+
+        public static void ReadKeyData()
+        {
+            string[] fileNames = Directory.GetFiles(FormMain.KeyPath, "*.xml");
+
+            foreach (string s in fileNames)
+            {
+                KeyData keyData = XnaSerializer.Deserialize<KeyData>(s);
+                itemManager.KeyData.Add(keyData.Name, keyData);
+            }
+        }
+
+        public static void ReadChestData()
+        {
+            string[] fileNames = Directory.GetFiles(FormMain.ChestPath, "*.xml");
+
+            foreach (string s in fileNames)
+            {
+                ChestData chestData = XnaSerializer.Deserialize<ChestData>(s);
+                itemManager.ChestData.Add(chestData.Name, chestData);
+            }
+        }
+
+        public static void WriteSkillData()
+        {
+            foreach (string s in SkillManager.SkillData.Keys)
+            {
+                XnaSerializer.Serialize<SkillData>(
+                FormMain.SkillPath + @"\" + s + ".xml",
+                SkillManager.SkillData[s]);
+            }
+        }
+        public static void ReadSkillData()
+        {
+            skillManager = new SkillDataManager();
+            string[] fileNames = Directory.GetFiles(FormMain.SkillPath, "*.xml");
+            foreach (string s in fileNames)
+            {
+                SkillData chestData = XnaSerializer.Deserialize<SkillData>(s);
+                skillManager.SkillData.Add(chestData.Name, chestData);
             }
         }
 

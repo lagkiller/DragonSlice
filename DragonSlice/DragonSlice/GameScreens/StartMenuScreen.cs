@@ -124,12 +124,12 @@ namespace DragonSlice.GameScreens
         {
             if (sender == startGame)
             {
-                StateManager.PushState(GameRef.CharacterGeneratorScreen);
+                Transition(ChangeType.Push, GameRef.CharacterGeneratorScreen);
             }
 
             if (sender == loadGame)
             {
-                //StateManager.PushState(GameRef.GamePlayScreen);
+                Transition(ChangeType.Push, GameRef.LoadGameScreen);
             }
 
             if (sender == exitGame)

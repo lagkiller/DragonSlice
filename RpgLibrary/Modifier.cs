@@ -5,10 +5,11 @@ using System.Text;
 
 namespace RpgLibrary
 {
-    public struct Modifier
+    public class Modifier
     {
         #region Field region
 
+        public string Modifying;
         public int Amount;
         public int Duration;
         public TimeSpan TimeLeft;
@@ -17,15 +18,17 @@ namespace RpgLibrary
 
         #region Constructor region
 
-        public Modifier(int amount)
+        public Modifier(string modifying, int amount)
         {
+            Modifying = modifying;
             Amount = amount;
             Duration = -1;
             TimeLeft = TimeSpan.Zero;
         }
 
-        public Modifier(int amount, int duration)
+        public Modifier(string modifying, int amount, int duration)
         {
+            Modifying = modifying;
             Amount = amount;
             Duration = duration;
             TimeLeft = TimeSpan.FromSeconds(duration);

@@ -83,6 +83,10 @@
     <Compile Include="TrapClasses\Trap.cs" />
     <Compile Include="TrapClasses\TrapData.cs" />
     <Compile Include="TrapClasses\TrapManager.cs" />
+    <Compile Include="WorldClasses\LevelData.cs" />
+    <Compile Include="WorldClasses\MapData.cs" />
+    <Compile Include="WorldClasses\MapLayerData.cs" />
+    <Compile Include="WorldClasses\TilesetData.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

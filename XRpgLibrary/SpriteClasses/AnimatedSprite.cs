@@ -21,7 +21,7 @@ namespace XRpgLibrary.SpriteClasses
         Texture2D texture;
         Vector2 position;
         Vector2 velocity;
-        float speed = 2.0f;
+        float speed = 200.0f;
 
         #endregion
 
@@ -75,7 +75,7 @@ namespace XRpgLibrary.SpriteClasses
             }
             set
             {
-                speed = MathHelper.Clamp(speed, 1.0f, 16.0f);
+                speed = MathHelper.Clamp(speed, 1.0f, 400.0f);
             }
         }
 

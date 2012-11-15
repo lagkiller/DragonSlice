@@ -56,7 +56,7 @@ namespace RpgLibrary.ItemClasses
         {
             get
             {
-                return KeyData;
+                return keyData;
             }
         }
 

@@ -69,6 +69,8 @@ namespace DragonSlice.GameScreens
         public override void Initialize()
         {
             base.Initialize();
+
+            player.Camera.LockToSprite(player.Sprite);
         }
 
         protected override void LoadContent()

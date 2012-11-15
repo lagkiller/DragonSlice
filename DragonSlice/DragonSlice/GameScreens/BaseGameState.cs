@@ -17,10 +17,14 @@ namespace DragonSlice.GameScreens
         #region Fields region
 
         protected Game1 GameRef;
-
         protected ControlManager ControlManager;
-
         protected PlayerIndex playerIndexInControl;
+        protected BaseGameState TransitionTo;
+        protected bool Transitioning;
+        protected ChangeType changeType;
+
+        protected TimeSpan transitionTimer;
+        protected TimeSpan transitionInterval = TimeSpan.FromSeconds(0.5);
 
         #endregion
 
@@ -56,12 +60,46 @@ namespace DragonSlice.GameScreens
 
         public override void Update(GameTime gameTime)
         {
+            if (Transitioning)
+            {
+                transitionTimer += gameTime.ElapsedGameTime;
+
+                if(transitionTimer >= transitionInterval)
+                {
+                    Transitioning = false;
+                    switch (changeType)
+                    {
+                        case ChangeType.Change:
+                            StateManager.ChangeState(TransitionTo);
+                            break;
+                        case ChangeType.Pop:
+                            StateManager.PopState();
+                            break;
+                        case ChangeType.Push:
+                            StateManager.PushState(TransitionTo);
+                            break;
+                    }
+                }
+            }
+
             base.Update(gameTime);
         }
 
         public override void Draw(GameTime gameTime)
         {
             base.Draw(gameTime);
+        }
+
+        #endregion
+
+        #region Method region
+
+        public virtual void Transition(ChangeType change, BaseGameState gameState)
+        {
+            Transitioning = true;
+            changeType = change;
+            TransitionTo = gameState;
+            transitionTimer = TimeSpan.Zero;
         }
 
         #endregion

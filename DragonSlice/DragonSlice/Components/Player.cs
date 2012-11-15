@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework.Input;
 using XRpgLibrary;
 using XRpgLibrary.TileEngine;
 using XRpgLibrary.SpriteClasses;
+using XRpgLibrary.CharacterClasses;
 
 namespace DragonSlice.Components
 {
@@ -19,7 +20,7 @@ namespace DragonSlice.Components
 
         Camera camera;
         Game1 gameRef;
-        readonly AnimatedSprite sprite;
+        readonly Character character;
 
         #endregion
 
@@ -41,7 +42,15 @@ namespace DragonSlice.Components
         {
             get
             {
-                return sprite;
+                return character.Sprite;
+            }
+        }
+
+        public Character Character
+        {
+            get
+            {
+                return character;
             }
         }
 
@@ -49,11 +58,12 @@ namespace DragonSlice.Components
 
         #region Constructor Region
 
-        public Player(Game game, AnimatedSprite sprite)
+        public Player(Game game, Character character)
         {
             gameRef = (Game1)game;
             camera = new Camera(gameRef.ScreenRectangle);
-            this.sprite = sprite;
+            this.character = character;
+            Sprite.Position = new Vector2(1000, 1000);
         }
 
         #endregion
@@ -63,7 +73,7 @@ namespace DragonSlice.Components
         public void Update(GameTime gameTime)
         {
             camera.Update(gameTime);
-            sprite.Update(gameTime);
+            Sprite.Update(gameTime);
 
             if (InputHandler.KeyReleased(Keys.PageUp) ||
                 InputHandler.ButtonReleased(Buttons.LeftShoulder, PlayerIndex.One))
@@ -71,7 +81,7 @@ namespace DragonSlice.Components
                 camera.ZoomIn();
                 if (camera.CameraMode == CameraMode.Follow)
                 {
-                    camera.LockToSprite(sprite);
+                    camera.LockToSprite(Sprite);
                 }
             }
             else if (InputHandler.KeyReleased(Keys.PageDown) ||
@@ -80,7 +90,7 @@ namespace DragonSlice.Components
                 camera.ZoomOut();
                 if (camera.CameraMode == CameraMode.Follow)
                 {
-                    camera.LockToSprite(sprite);
+                    camera.LockToSprite(Sprite);
                 }
             }
 
@@ -89,45 +99,45 @@ namespace DragonSlice.Components
             if (InputHandler.KeyDown(Keys.W) ||
                 InputHandler.ButtonDown(Buttons.LeftThumbstickUp, PlayerIndex.One))
             {
-                sprite.CurrentAnimation = AnimationKey.Up;
+                Sprite.CurrentAnimation = AnimationKey.Up;
                 motion.Y = -1;
             }
             else if (InputHandler.KeyDown(Keys.S) ||
                 InputHandler.ButtonDown(Buttons.LeftThumbstickDown, PlayerIndex.One))
             {
-                sprite.CurrentAnimation = AnimationKey.Down;
+                Sprite.CurrentAnimation = AnimationKey.Down;
                 motion.Y = 1;
             }
 
             if (InputHandler.KeyDown(Keys.A) ||
                 InputHandler.ButtonDown(Buttons.LeftThumbstickLeft, PlayerIndex.One))
             {
-                sprite.CurrentAnimation = AnimationKey.Left;
+                Sprite.CurrentAnimation = AnimationKey.Left;
                 motion.X = -1;
             }
             else if (InputHandler.KeyDown(Keys.D) ||
                 InputHandler.ButtonDown(Buttons.LeftThumbstickRight, PlayerIndex.One))
             {
-                sprite.CurrentAnimation = AnimationKey.Right;
+                Sprite.CurrentAnimation = AnimationKey.Right;
                 motion.X = 1;
             }
 
             if (motion != Vector2.Zero)
             {
-                sprite.IsAnimating = true;
+                Sprite.IsAnimating = true;
                 motion.Normalize();
 
-                sprite.Position += motion * sprite.Speed;
-                sprite.LockToMap();
+                Sprite.Position += motion * Sprite.Speed * (float)gameTime.ElapsedGameTime.TotalSeconds;
+                Sprite.LockToMap();
 
                 if (Camera.CameraMode == CameraMode.Follow)
                 {
-                    Camera.LockToSprite(sprite);
+                    Camera.LockToSprite(Sprite);
                 }
             }
             else
             {
-                sprite.IsAnimating = false;
+                Sprite.IsAnimating = false;
             }
 
             if (InputHandler.KeyReleased(Keys.F) ||
@@ -136,7 +146,7 @@ namespace DragonSlice.Components
                 Camera.ToggleCameraMode();
                 if (Camera.CameraMode == CameraMode.Follow)
                 {
-                    Camera.LockToSprite(sprite);
+                    Camera.LockToSprite(Sprite);
                 }
             }
 
@@ -145,14 +155,14 @@ namespace DragonSlice.Components
                 if (InputHandler.KeyReleased(Keys.C) ||
                     InputHandler.ButtonReleased(Buttons.LeftStick, PlayerIndex.One))
                 {
-                    Camera.LockToSprite(sprite);
+                    Camera.LockToSprite(Sprite);
                 }
             }
         }
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            sprite.Draw(gameTime, spriteBatch);
+            character.Draw(gameTime, spriteBatch);
         }
 
         #endregion

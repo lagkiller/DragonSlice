@@ -10,7 +10,9 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
 using XRpgLibrary;
+
 using DragonSlice.GameScreens;
+using DragonSlice.Components;
 
 namespace DragonSlice
 {
@@ -24,6 +26,17 @@ namespace DragonSlice
         GraphicsDeviceManager graphics;
         public SpriteBatch SpriteBatch;
         public CharacterGeneratorScreen CharacterGeneratorScreen;
+        public SkillScreen SkillScreen;
+        public LoadGameScreen LoadGameScreen;
+
+        #endregion
+
+        #region FPS Field region
+
+        private float fps;
+        private float updateInterval = 1.0f;
+        private float timeSinceLastUpdate = 0.0f;
+        private float frameCount = 0;
 
         #endregion
 
@@ -69,8 +82,16 @@ namespace DragonSlice
             StartMenuScreen = new GameScreens.StartMenuScreen(this, stateManager);
             GamePlayScreen = new GameScreens.GamePlayScreen(this, stateManager);
             CharacterGeneratorScreen = new CharacterGeneratorScreen(this, stateManager);
+            LoadGameScreen = new LoadGameScreen(this, stateManager);
+            SkillScreen = new SkillScreen(this, stateManager);
 
             stateManager.ChangeState(TitleScreen);
+
+            //use this for testing on slow comps
+            /**
+            this.IsFixedTimeStep = false;
+            graphics.SynchronizeWithVerticalRetrace = false;
+             * **/
         }
 
         /// <summary>
@@ -92,6 +113,17 @@ namespace DragonSlice
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             SpriteBatch = new SpriteBatch(GraphicsDevice);
+
+            DataManager.ReadEntityData(Content);
+
+            DataManager.ReadArmorData(Content);
+            DataManager.ReadShieldData(Content);
+            DataManager.ReadWeaponData(Content);
+
+            DataManager.ReadChestData(Content);
+            DataManager.ReadKeyData(Content);
+
+            DataManager.ReadSkillData(Content);
         }
 
         /// <summary>
@@ -126,6 +158,23 @@ namespace DragonSlice
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             base.Draw(gameTime);
+
+            float elapsed = (float)gameTime.ElapsedGameTime.TotalSeconds;
+            frameCount++;
+            timeSinceLastUpdate += elapsed;
+
+            if (timeSinceLastUpdate > updateInterval)
+            {
+                fps = frameCount / timeSinceLastUpdate;
+
+#if XBOX360
+                System.Diagnostics.Debug.WriteLine("FPS: " + fps.ToString());
+#else
+                this.Window.Title = "FPS: " +fps.ToString();
+#endif
+                frameCount = 0;
+                timeSinceLastUpdate -= updateInterval;
+            }
         }
     }
 }

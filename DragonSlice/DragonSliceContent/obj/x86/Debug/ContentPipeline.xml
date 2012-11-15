@@ -47,15 +47,6 @@
       <Time>2012-11-03T15:37:36.7145895-04:00</Time>
     </Item>
     <Item>
-      <Source>Tilesets\tileset1.png</Source>
-      <Name>Tilesets\tileset1</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Tilesets\tileset1.xnb</Output>
-      <Time>2012-11-03T15:49:02.6088204-04:00</Time>
-    </Item>
-    <Item>
       <Source>Tilesets\tileset2.png</Source>
       <Name>Tilesets\tileset2</Name>
       <Importer>TextureImporter</Importer>
@@ -65,40 +56,13 @@
       <Time>2012-11-03T19:07:30.2718998-04:00</Time>
     </Item>
     <Item>
-      <Source>PlayerSprites\femalepriest.png</Source>
-      <Name>PlayerSprites\femalepriest</Name>
+      <Source>Tilesets\tileset1.png</Source>
+      <Name>Tilesets\tileset1</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\PlayerSprites\femalepriest.xnb</Output>
-      <Time>2012-11-03T21:01:55.1405478-04:00</Time>
-    </Item>
-    <Item>
-      <Source>PlayerSprites\femalerogue.png</Source>
-      <Name>PlayerSprites\femalerogue</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\PlayerSprites\femalerogue.xnb</Output>
-      <Time>2012-11-03T21:01:55.144548-04:00</Time>
-    </Item>
-    <Item>
-      <Source>PlayerSprites\malepriest.png</Source>
-      <Name>PlayerSprites\malepriest</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\PlayerSprites\malepriest.xnb</Output>
-      <Time>2012-11-03T21:01:55.1495483-04:00</Time>
-    </Item>
-    <Item>
-      <Source>PlayerSprites\malerogue.png</Source>
-      <Name>PlayerSprites\malerogue</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\PlayerSprites\malerogue.xnb</Output>
-      <Time>2012-11-03T21:01:55.1505484-04:00</Time>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Tilesets\tileset1.xnb</Output>
+      <Time>2012-11-03T15:49:02.6088204-04:00</Time>
     </Item>
     <Item>
       <Source>PlayerSprites\FemaleWarrior.png</Source>
@@ -108,6 +72,24 @@
       <Options>None</Options>
       <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\PlayerSprites\FemaleWarrior.xnb</Output>
       <Time>2012-11-03T21:01:55.1365475-04:00</Time>
+    </Item>
+    <Item>
+      <Source>PlayerSprites\FemalePriest.png</Source>
+      <Name>PlayerSprites\FemalePriest</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\PlayerSprites\FemalePriest.xnb</Output>
+      <Time>2012-11-03T21:01:55.1405478-04:00</Time>
+    </Item>
+    <Item>
+      <Source>PlayerSprites\FemaleRogue.png</Source>
+      <Name>PlayerSprites\FemaleRogue</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\PlayerSprites\FemaleRogue.xnb</Output>
+      <Time>2012-11-03T21:01:55.144548-04:00</Time>
     </Item>
     <Item>
       <Source>PlayerSprites\FemaleMagician.png</Source>
@@ -126,6 +108,24 @@
       <Options>None</Options>
       <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\PlayerSprites\MaleWarrior.xnb</Output>
       <Time>2012-11-03T21:01:55.1475482-04:00</Time>
+    </Item>
+    <Item>
+      <Source>PlayerSprites\MalePriest.png</Source>
+      <Name>PlayerSprites\MalePriest</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\PlayerSprites\MalePriest.xnb</Output>
+      <Time>2012-11-03T21:01:55.1495483-04:00</Time>
+    </Item>
+    <Item>
+      <Source>PlayerSprites\MaleRogue.png</Source>
+      <Name>PlayerSprites\MaleRogue</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\PlayerSprites\MaleRogue.xnb</Output>
+      <Time>2012-11-03T21:01:55.1505484-04:00</Time>
     </Item>
     <Item>
       <Source>PlayerSprites\MaleMagician.png</Source>
@@ -154,6 +154,492 @@
       <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\ObjectSprites\containers.xnb</Output>
       <Time>2012-11-09T21:20:07.1911241-05:00</Time>
     </Item>
+    <Item>
+      <Source>ObjectSprites\itemimages.png</Source>
+      <Name>ObjectSprites\itemimages</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\ObjectSprites\itemimages.xnb</Output>
+      <Time>2012-11-11T13:14:50.4124677-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Chests\Big Gold Chest.xml</Source>
+      <Name>Game\Chests\Big Gold Chest</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Chests\Big Gold Chest.xnb</Output>
+      <Time>2012-11-14T20:23:41.5184996-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Chests\Broken Crate.xml</Source>
+      <Name>Game\Chests\Broken Crate</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Chests\Broken Crate.xnb</Output>
+      <Time>2012-11-14T20:24:43.5360468-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Chests\Gold Chest.xml</Source>
+      <Name>Game\Chests\Gold Chest</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Chests\Gold Chest.xnb</Output>
+      <Time>2012-11-14T20:24:53.5266183-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Chests\Plain Chest.xml</Source>
+      <Name>Game\Chests\Plain Chest</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Chests\Plain Chest.xnb</Output>
+      <Time>2012-11-14T20:25:02.8091492-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Chests\Rusty Chest.xml</Source>
+      <Name>Game\Chests\Rusty Chest</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Chests\Rusty Chest.xnb</Output>
+      <Time>2012-11-14T20:25:22.475274-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Classes\Fighter.xml</Source>
+      <Name>Game\Classes\Fighter</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Classes\Fighter.xnb</Output>
+      <Time>2012-11-14T20:25:47.0816814-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Classes\Magician.xml</Source>
+      <Name>Game\Classes\Magician</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Classes\Magician.xnb</Output>
+      <Time>2012-11-14T20:25:56.8532403-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Classes\Priest.xml</Source>
+      <Name>Game\Classes\Priest</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Classes\Priest.xnb</Output>
+      <Time>2012-11-14T20:26:05.6037408-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Classes\Rogue.xml</Source>
+      <Name>Game\Classes\Rogue</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Classes\Rogue.xnb</Output>
+      <Time>2012-11-14T20:26:16.8063816-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Classes\Warrior.xml</Source>
+      <Name>Game\Classes\Warrior</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Classes\Warrior.xnb</Output>
+      <Time>2012-11-14T20:26:40.293725-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Classes\Wizard.xml</Source>
+      <Name>Game\Classes\Wizard</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Classes\Wizard.xnb</Output>
+      <Time>2012-11-14T20:26:54.5405399-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Game.xml</Source>
+      <Name>Game\Game</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Game.xnb</Output>
+      <Time>2012-11-14T20:27:06.4402205-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Armor\Chain Mail Boots.xml</Source>
+      <Name>Game\Items\Armor\Chain Mail Boots</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Armor\Chain Mail Boots.xnb</Output>
+      <Time>2012-11-14T20:27:18.9099337-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Armor\Chain Mail Gloves.xml</Source>
+      <Name>Game\Items\Armor\Chain Mail Gloves</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Armor\Chain Mail Gloves.xnb</Output>
+      <Time>2012-11-14T20:32:48.3677776-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Armor\Chain Mail Helm.xml</Source>
+      <Name>Game\Items\Armor\Chain Mail Helm</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Armor\Chain Mail Helm.xnb</Output>
+      <Time>2012-11-14T20:32:50.4908991-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Armor\Chain Mail.xml</Source>
+      <Name>Game\Items\Armor\Chain Mail</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Armor\Chain Mail.xnb</Output>
+      <Time>2012-11-14T20:32:50.472898-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Armor\Leather Armor.xml</Source>
+      <Name>Game\Items\Armor\Leather Armor</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Armor\Leather Armor.xnb</Output>
+      <Time>2012-11-14T20:32:50.4598973-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Armor\Leather Boots.xml</Source>
+      <Name>Game\Items\Armor\Leather Boots</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Armor\Leather Boots.xnb</Output>
+      <Time>2012-11-14T20:32:50.4468965-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Armor\Leather Gloves.xml</Source>
+      <Name>Game\Items\Armor\Leather Gloves</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Armor\Leather Gloves.xnb</Output>
+      <Time>2012-11-14T20:32:50.4318957-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Armor\Leather Helm.xml</Source>
+      <Name>Game\Items\Armor\Leather Helm</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Armor\Leather Helm.xnb</Output>
+      <Time>2012-11-14T20:32:50.4188949-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Armor\Light Robes.xml</Source>
+      <Name>Game\Items\Armor\Light Robes</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Armor\Light Robes.xnb</Output>
+      <Time>2012-11-14T20:32:50.4048941-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Armor\Medium Robes.xml</Source>
+      <Name>Game\Items\Armor\Medium Robes</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Armor\Medium Robes.xnb</Output>
+      <Time>2012-11-14T20:32:50.3888932-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Armor\Studded Leather Armor.xml</Source>
+      <Name>Game\Items\Armor\Studded Leather Armor</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Armor\Studded Leather Armor.xnb</Output>
+      <Time>2012-11-14T20:32:50.3748924-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Armor\Studded Leather Boots.xml</Source>
+      <Name>Game\Items\Armor\Studded Leather Boots</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Armor\Studded Leather Boots.xnb</Output>
+      <Time>2012-11-14T20:32:50.3608916-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Armor\Studded Leather Gloves.xml</Source>
+      <Name>Game\Items\Armor\Studded Leather Gloves</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Armor\Studded Leather Gloves.xnb</Output>
+      <Time>2012-11-14T20:32:50.3468908-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Armor\Studded Leather Helm.xml</Source>
+      <Name>Game\Items\Armor\Studded Leather Helm</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Armor\Studded Leather Helm.xnb</Output>
+      <Time>2012-11-14T20:32:50.3298899-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Shield\Heavy Tower Shield.xml</Source>
+      <Name>Game\Items\Shield\Heavy Tower Shield</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Shield\Heavy Tower Shield.xnb</Output>
+      <Time>2012-11-14T20:32:50.3168891-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Shield\Large Kite Shield.xml</Source>
+      <Name>Game\Items\Shield\Large Kite Shield</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Shield\Large Kite Shield.xnb</Output>
+      <Time>2012-11-14T20:32:50.3038884-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Shield\Large Metal Shield.xml</Source>
+      <Name>Game\Items\Shield\Large Metal Shield</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Shield\Large Metal Shield.xnb</Output>
+      <Time>2012-11-14T20:32:50.2888875-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Shield\Large Wooden Shield.xml</Source>
+      <Name>Game\Items\Shield\Large Wooden Shield</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Shield\Large Wooden Shield.xnb</Output>
+      <Time>2012-11-14T20:32:50.2748867-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Shield\Medium Metal Shield.xml</Source>
+      <Name>Game\Items\Shield\Medium Metal Shield</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Shield\Medium Metal Shield.xnb</Output>
+      <Time>2012-11-14T20:32:50.2608859-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Shield\Medium Wooden Shield.xml</Source>
+      <Name>Game\Items\Shield\Medium Wooden Shield</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Shield\Medium Wooden Shield.xnb</Output>
+      <Time>2012-11-14T20:32:50.244885-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Shield\Small Metal Shield.xml</Source>
+      <Name>Game\Items\Shield\Small Metal Shield</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Shield\Small Metal Shield.xnb</Output>
+      <Time>2012-11-14T20:32:50.2318842-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Shield\Small Wooded Shield.xml</Source>
+      <Name>Game\Items\Shield\Small Wooded Shield</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Shield\Small Wooded Shield.xnb</Output>
+      <Time>2012-11-14T20:32:50.2178834-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Weapon\Acolyte Staff.xml</Source>
+      <Name>Game\Items\Weapon\Acolyte Staff</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Weapon\Acolyte Staff.xnb</Output>
+      <Time>2012-11-14T20:32:50.2028826-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Weapon\Apprentice Staff.xml</Source>
+      <Name>Game\Items\Weapon\Apprentice Staff</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Weapon\Apprentice Staff.xnb</Output>
+      <Time>2012-11-14T20:32:50.1888818-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Weapon\Battle Axe.xml</Source>
+      <Name>Game\Items\Weapon\Battle Axe</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Weapon\Battle Axe.xnb</Output>
+      <Time>2012-11-14T20:32:50.174881-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Weapon\Broad Sword.xml</Source>
+      <Name>Game\Items\Weapon\Broad Sword</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Weapon\Broad Sword.xnb</Output>
+      <Time>2012-11-14T20:32:50.1598801-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Weapon\Club.xml</Source>
+      <Name>Game\Items\Weapon\Club</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Weapon\Club.xnb</Output>
+      <Time>2012-11-14T20:32:50.1468794-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Weapon\Dagger.xml</Source>
+      <Name>Game\Items\Weapon\Dagger</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Weapon\Dagger.xnb</Output>
+      <Time>2012-11-14T20:32:50.1348787-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Weapon\Flail.xml</Source>
+      <Name>Game\Items\Weapon\Flail</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Weapon\Flail.xnb</Output>
+      <Time>2012-11-14T20:32:50.1178777-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Weapon\Great Sword.xml</Source>
+      <Name>Game\Items\Weapon\Great Sword</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Weapon\Great Sword.xnb</Output>
+      <Time>2012-11-14T20:32:50.1018768-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Weapon\Halberd.xml</Source>
+      <Name>Game\Items\Weapon\Halberd</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Weapon\Halberd.xnb</Output>
+      <Time>2012-11-14T20:32:50.086876-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Weapon\Long Sword.xml</Source>
+      <Name>Game\Items\Weapon\Long Sword</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Weapon\Long Sword.xnb</Output>
+      <Time>2012-11-14T20:32:50.069875-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Weapon\Mace.xml</Source>
+      <Name>Game\Items\Weapon\Mace</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Weapon\Mace.xnb</Output>
+      <Time>2012-11-14T20:32:50.0558742-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Weapon\Short Sword.xml</Source>
+      <Name>Game\Items\Weapon\Short Sword</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Weapon\Short Sword.xnb</Output>
+      <Time>2012-11-14T20:32:50.0418734-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Items\Weapon\War Axe.xml</Source>
+      <Name>Game\Items\Weapon\War Axe</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Items\Weapon\War Axe.xnb</Output>
+      <Time>2012-11-14T20:32:50.0208722-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Keys\Gold Key.xml</Source>
+      <Name>Game\Keys\Gold Key</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Keys\Gold Key.xnb</Output>
+      <Time>2012-11-14T20:32:50.0068714-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Keys\Rusty Key.xml</Source>
+      <Name>Game\Keys\Rusty Key</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Keys\Rusty Key.xnb</Output>
+      <Time>2012-11-14T20:32:49.9928706-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Skills\Bartering.xml</Source>
+      <Name>Game\Skills\Bartering</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Skills\Bartering.xnb</Output>
+      <Time>2012-11-14T20:32:49.9778697-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Skills\Herbalism.xml</Source>
+      <Name>Game\Skills\Herbalism</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Skills\Herbalism.xnb</Output>
+      <Time>2012-11-14T20:32:49.9628689-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Skills\Poison Making.xml</Source>
+      <Name>Game\Skills\Poison Making</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Skills\Poison Making.xnb</Output>
+      <Time>2012-11-14T20:32:49.9498681-05:00</Time>
+    </Item>
+    <Item>
+      <Source>Game\Skills\Trap Making.xml</Source>
+      <Name>Game\Skills\Trap Making</Name>
+      <Importer>XmlImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\Game\Skills\Trap Making.xnb</Output>
+      <Time>2012-11-14T20:32:49.9368674-05:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>
@@ -166,6 +652,10 @@
       <OutputDirectory>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\DragonSlice\DragonSlice\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
+      <Assembly>
+        <Key>C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\XRpgLibrary\bin\x86\Debug\XRpgLibrary.dll</Key>
+        <Value>2012-11-14T20:42:16.1392523-05:00</Value>
+      </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
         <Value>2010-08-23T12:41:18-04:00</Value>

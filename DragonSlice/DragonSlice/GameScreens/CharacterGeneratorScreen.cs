@@ -13,8 +13,11 @@ using XRpgLibrary.SpriteClasses;
 using XRpgLibrary.TileEngine;
 using XRpgLibrary.WorldClasses;
 using XRpgLibrary.ItemClasses;
+using XRpgLibrary.CharacterClasses;
 
-using RpgLibrary.ItemClasses;
+using XRpgLibrary.ItemClasses;
+using XRpgLibrary.CharacterClasses;
+using XRpgLibrary.SkillClasses;
 
 using DragonSlice.Components;
 
@@ -32,7 +35,7 @@ namespace DragonSlice.GameScreens
         Texture2D containers;
 
         string[] genderItems = { "Male", "Female"};
-        string[] classItems = { "Warrior", "Magician", "Rogue", "Priest"};
+        string[] classItems;
 
         #endregion
 
@@ -76,6 +79,16 @@ namespace DragonSlice.GameScreens
         protected override void LoadContent()
         {
             base.LoadContent();
+
+            classItems = new string[DataManager.EntityData.Count];
+
+            int counter = 0;
+
+            foreach (string className in DataManager.EntityData.Keys)
+            {
+                classItems[counter] = className;
+                counter++;
+            }
 
             LoadImages();
             CreateControls();
@@ -175,10 +188,12 @@ namespace DragonSlice.GameScreens
         {
             InputHandler.Flush();
 
-            StateManager.ChangeState(GameRef.GamePlayScreen);
-
             CreatePlayer();
             CreateWorld();
+
+            GameRef.SkillScreen.SkillPoints = 10;
+            Transition(ChangeType.Change, GameRef.SkillScreen);
+            GameRef.SkillScreen.SetTarget(GamePlayScreen.Player.Character);
         }
 
         private void CreatePlayer()
@@ -201,7 +216,28 @@ namespace DragonSlice.GameScreens
                 characterImages[genderSelector.SelectedIndex, classSelector.SelectedIndex],
                 animations);
 
-            GamePlayScreen.Player = new Player(GameRef, sprite);
+            EntityGender gender = EntityGender.Male;
+
+            if (genderSelector.SelectedIndex == 1)
+            {
+                gender = EntityGender.Female;
+            }
+
+            Entity entity = new Entity(
+                "Nanuq",
+                DataManager.EntityData[classSelector.SelectedItem],
+                gender,
+                EntityType.Character);
+
+            foreach (string s in DataManager.SkillData.Keys)
+            {
+                Skill skill = Skill.FromSkillData(DataManager.SkillData[s]);
+                entity.Skills.Add(s, skill);
+            }
+
+            Character character = new Character(entity, sprite);
+
+            GamePlayScreen.Player = new Player(GameRef, character);
         }
 
         private void CreateWorld()
@@ -222,7 +258,7 @@ namespace DragonSlice.GameScreens
             {
                 for (int x = 0; x < layer.Width; x++)
                 {
-                    Tile tile = new Tile(0, 0);
+                    XRpgLibrary.TileEngine.Tile tile = new XRpgLibrary.TileEngine.Tile(0, 0);
 
                     layer.SetTile(x, y, tile);
                 }
@@ -238,13 +274,13 @@ namespace DragonSlice.GameScreens
                 int y = random.Next(0, 100);
                 int index = random.Next(2, 14);
 
-                Tile tile = new Tile(index, 0);
+                XRpgLibrary.TileEngine.Tile tile = new XRpgLibrary.TileEngine.Tile(index, 0);
                 splatter.SetTile(x, y, tile);
             }
 
-            splatter.SetTile(1, 0, new Tile(0, 1));
-            splatter.SetTile(2, 0, new Tile(2, 1));
-            splatter.SetTile(3, 0, new Tile(0, 1));
+            splatter.SetTile(1, 0, new XRpgLibrary.TileEngine.Tile(0, 1));
+            splatter.SetTile(2, 0, new XRpgLibrary.TileEngine.Tile(2, 1));
+            splatter.SetTile(3, 0, new XRpgLibrary.TileEngine.Tile(0, 1));
 
             List<MapLayer> mapLayers = new List<MapLayer>();
             mapLayers.Add(layer);
@@ -253,10 +289,7 @@ namespace DragonSlice.GameScreens
             TileMap map = new TileMap(tilesets, mapLayers);
             Level level = new Level(map);
 
-            ChestData chestData = new ChestData();
-            chestData.Name = "A chest";
-            chestData.MinGold = 10;
-            chestData.MaxGold = 101;
+            ChestData chestData = Game.Content.Load<ChestData>(@"Game\Chests\Plain Chest");
 
             Chest chest = new Chest(chestData);
 

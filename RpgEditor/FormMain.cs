@@ -8,9 +8,9 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 
-using RpgLibrary;
-using RpgLibrary.CharacterClasses;
-using RpgLibrary.ItemClasses;
+using XRpgLibrary;
+using XRpgLibrary.CharacterClasses;
+using XRpgLibrary.ItemClasses;
 
 namespace RpgEditor
 {
@@ -23,9 +23,16 @@ namespace RpgEditor
         FormArmor frmArmor;
         FormShield frmShield;
         FormWeapon frmWeapon;
+        FormKey frmKey;
+        FormChest frmChest;
+        FormSkill frmSkill;
+
         static string gamePath = "";
         static string classPath = "";
         static string itemPath = "";
+        static string chestPath = "";
+        static string keyPath = "";
+        static string skillPath = "";
 
         #endregion
 
@@ -55,6 +62,30 @@ namespace RpgEditor
             }
         }
 
+        public static string ChestPath
+        {
+            get
+            {
+                return chestPath;
+            }
+        }
+
+        public static string KeyPath
+        {
+            get
+            {
+                return keyPath;
+            }
+        }
+
+        public static string SkillPath
+        {
+            get
+            {
+                return skillPath;
+            }
+        }
+
         #endregion
 
         #region Constructor region
@@ -74,11 +105,51 @@ namespace RpgEditor
             armorToolStripMenuItem.Click += new EventHandler(armorToolStripMenuItem_Click);
             shieldToolStripMenuItem.Click += new EventHandler(shieldToolStripMenuItem_Click);
             weaponsToolStripMenuItem.Click += new EventHandler(weaponsToolStripMenuItem_Click);
+
+            keysToolStripMenuItem.Click += new EventHandler(keysToolStripMenuItem_Click);
+            chestsToolStripMenuItem.Click += new EventHandler(chestsToolStripMenuItem_Click);
+
+            skillsToolStripMenuItem.Click += new EventHandler(skillsToolStripMenuItem_Click);
         }
 
         #endregion
 
         #region Menu Item Event Handler region
+
+        void skillsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (frmSkill == null)
+            {
+                frmSkill = new FormSkill();
+                frmSkill.MdiParent = this;
+            }
+
+            frmSkill.Show();
+            frmSkill.BringToFront();
+        }
+
+        void chestsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (frmChest == null)
+            {
+                frmChest = new FormChest();
+                frmChest.MdiParent = this;
+            }
+
+            frmChest.Show();
+            frmChest.BringToFront();
+        }
+
+        void keysToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (frmKey == null)
+            {
+                frmKey = new FormKey();
+                frmKey.MdiParent = this;
+            }
+            frmKey.Show();
+            frmKey.BringToFront();
+        }
 
         void weaponsToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -142,6 +213,9 @@ namespace RpgEditor
                     XnaSerializer.Serialize<RolePlayingGame>(gamePath + @"\Game.xml", rolePlayingGame);
                     FormDetails.WriteEntityData();
                     FormDetails.WriteItemData();
+                    FormDetails.WriteChestData();
+                    FormDetails.WriteKeyData();
+                    FormDetails.WriteSkillData();
                 }
                 catch (Exception ex)
                 {
@@ -220,7 +294,7 @@ namespace RpgEditor
                 {
                     FolderBrowserDialog folderDialog = new FolderBrowserDialog();
 
-                    folderDialog.Description = "Select folder to create game in";
+                    folderDialog.Description = "Select directory to create folder in";
                     folderDialog.SelectedPath = Application.StartupPath;
 
                     DialogResult folderResult = folderDialog.ShowDialog();
@@ -232,6 +306,9 @@ namespace RpgEditor
                             gamePath = Path.Combine(folderDialog.SelectedPath, "Game");
                             classPath = Path.Combine(gamePath, "Classes");
                             itemPath = Path.Combine(gamePath, "Items");
+                            keyPath = Path.Combine(gamePath, "Keys");
+                            chestPath = Path.Combine(gamePath, "Chests");
+                            skillPath = Path.Combine(gamePath, "Skills");
 
                             if (Directory.Exists(gamePath))
                             {
@@ -243,6 +320,9 @@ namespace RpgEditor
                             Directory.CreateDirectory(itemPath + @"\Armor");
                             Directory.CreateDirectory(itemPath + @"\Shield");
                             Directory.CreateDirectory(itemPath + @"\Weapon");
+                            Directory.CreateDirectory(keyPath);
+                            Directory.CreateDirectory(chestPath);
+                            Directory.CreateDirectory(skillPath);
 
                             rolePlayingGame = frmNewGame.RolePlayingGame;
                             XnaSerializer.Serialize<RolePlayingGame>(gamePath + @"\Game.xml", rolePlayingGame);
@@ -255,6 +335,9 @@ namespace RpgEditor
 
                         classesToolStripMenuItem.Enabled = true;
                         itemsToolStripMenuItem.Enabled = true;
+                        keysToolStripMenuItem.Enabled = true;
+                        chestsToolStripMenuItem.Enabled = true;
+                        skillsToolStripMenuItem.Enabled = true;
                     }
                 }
             }
@@ -283,11 +366,32 @@ namespace RpgEditor
             gamePath = path;
             classPath = Path.Combine(gamePath, "Classes");
             itemPath = Path.Combine(gamePath, "Items");
+            keyPath = Path.Combine(gamePath, "Keys");
+            chestPath = Path.Combine(gamePath, "Chests");
+            skillPath = Path.Combine(gamePath, "Skills");
+
+            if (!Directory.Exists(keyPath))
+            {
+                Directory.CreateDirectory(keyPath);
+            }
+
+            if (!Directory.Exists(chestPath))
+            {
+                Directory.CreateDirectory(chestPath);
+            }
+
+            if (!Directory.Exists(skillPath))
+            {
+                Directory.CreateDirectory(skillPath);
+            }
 
             rolePlayingGame = XnaSerializer.Deserialize<RolePlayingGame>(gamePath + @"\Game.xml");
 
             FormDetails.ReadEntityData();
             FormDetails.ReadItemData();
+            FormDetails.ReadKeyData();
+            FormDetails.ReadChestData();
+            FormDetails.ReadSkillData();
 
             PrepareForms();
         }
@@ -326,8 +430,35 @@ namespace RpgEditor
 
             frmWeapon.FillListBox();
 
+            if (frmKey == null)
+            {
+                frmKey = new FormKey();
+                frmKey.MdiParent = this;
+            }
+
+            frmKey.FillListBox();
+
+            if (frmChest == null)
+            {
+                frmChest = new FormChest();
+                frmChest.MdiParent = this;
+            }
+
+            frmChest.FillListBox();
+
+            if (frmSkill == null)
+            {
+                frmSkill = new FormSkill();
+                frmSkill.MdiParent = this;
+            }
+
+            frmSkill.FillListBox();
+
             classesToolStripMenuItem.Enabled = true;
             itemsToolStripMenuItem.Enabled = true;
+            keysToolStripMenuItem.Enabled = true;
+            chestsToolStripMenuItem.Enabled = true;
+            skillsToolStripMenuItem.Enabled = true;
         }
 
         #endregion

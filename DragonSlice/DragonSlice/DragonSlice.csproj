@@ -135,11 +135,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\DataManager.cs" />
     <Compile Include="Components\Player.cs" />
     <Compile Include="GameScreens\BaseGameState.cs" />
     <Compile Include="GameScreens\CharacterGeneratorScreen.cs" />
     <Compile Include="GameScreens\GamePlayScreen.cs" />
     <Compile Include="GameScreens\LoadGameScreen.cs" />
+    <Compile Include="GameScreens\SkillScreen.cs" />
     <Compile Include="GameScreens\StartMenuScreen.cs" />
     <Compile Include="GameScreens\TitleScreen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -154,10 +156,6 @@
     <Content Include="GameThumbnail.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\RpgLibrary\RpgLibrary.csproj">
-      <Project>{FA9AF6A5-CEE8-418A-86DF-4F2A3FB3DAD2}</Project>
-      <Name>RpgLibrary</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\XRpgLibrary\XRpgLibrary.csproj">
       <Project>{C7525D52-15AB-4C4B-8603-17CB765F82DB}</Project>
       <Name>XRpgLibrary</Name>
