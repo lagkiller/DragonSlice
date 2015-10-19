@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:CharacterClasses="XRpgLibrary.CharacterClasses">
+  <Asset Type="CharacterClasses:EntityData">
+    <EntityName>Rogue</EntityName>
+    <Strength>10</Strength>
+    <Dexterity>14</Dexterity>
+    <Intelligence>14</Intelligence>
+    <Agility>12</Agility>
+    <Wisdom>10</Wisdom>
+    <Vitality>10</Vitality>
+    <HealthFormula>10|VIT|8</HealthFormula>
+    <StaminaFormula>12|AGI|12</StaminaFormula>
+    <ManaFormula>0|0|0</ManaFormula>
+  </Asset>
+</XnaContent>

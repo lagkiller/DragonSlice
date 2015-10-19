@@ -1,0 +1,5 @@
+C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\RpgLibrary\bin\Debug\RpgLibrary.dll
+C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\RpgLibrary\bin\Debug\RpgLibrary.pdb
+C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\RpgLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\RpgLibrary\obj\Debug\RpgLibrary.dll
+C:\Users\Nanyou\Documents\Visual Studio 2010\Projects\DragonSlice\RpgLibrary\obj\Debug\RpgLibrary.pdb
